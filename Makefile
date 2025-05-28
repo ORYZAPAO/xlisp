@@ -134,5 +134,5 @@ $(LIBDIR)/libxlisp.a:	$(LIBOBJDIR) $(LIBOBJS)
 $(OBJSUBDIRS):	$(OBJDIR)
 
 $(DIRS) $(OBJSUBDIRS):
-	$(MKDIR) $@
+	$(MKDIR) -p $@
 
