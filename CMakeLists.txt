@@ -21,6 +21,7 @@ if(can_link_time_optimize)
     set_target_properties(xlisp-repl PROPERTIES INTERPROCEDURAL_OPTIMIZATION TRUE)
 endif()
 
+
 #---------------------------------installation---------------------------------#
 # if(NOT WIN32 AND CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
 #     set(CMAKE_INSTALL_PREFIX "/opt/${PROJECT_NAME}")
@@ -79,6 +80,8 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Linux")
 else()
     set(CPACK_GENERATOR TGZ)
 endif()
+
+target_link_libraries(xlisp m)
 
 # `make package`
 include(CPack)
