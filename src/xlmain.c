@@ -8,8 +8,20 @@
 #include "xlisp.h"
 
 /* the program banner */
-#define BANNER  "\
-XLISP 3.3, September 6, 2002 Copyright (c) 1984-2002, by David Betz"
+//#define BANNER  "\
+//XLISP 3.3, September 6, 2002 Copyright (c) 1984-2002, by David Betz"
+#define BANNER "\ 
+#######                                   #                       \n\
+     #   ####   ####    ##   #    #       #       #  ####  #####  \n\
+    #   #    # #       #  #  ##   #       #       # #      #    # \n\
+   #    #    #  ####  #    # # #  # ##### #       #  ####  #    # \n\
+  #     #    #      # ###### #  # #       #       #      # #####  \n\
+ #      #    # #    # #    # #   ##       #       # #    # #      \n\
+#######  ####   ####  #    # #    #       ####### #  ####  # \n\
+\n\
+XLISP 3.3, September 6, 2002 Copyright (c) 1984-2002, by David Betz \n\
+ZLISP 0.0.1 by ORYZA\n";
+
 
 /* global variables */
 int xlCmdLineArgC = 0;                  /* command line argument count */
