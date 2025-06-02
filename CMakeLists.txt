@@ -4,6 +4,8 @@ project(XLisp
     DESCRIPTION "XLISP - an object-oriented LISP"
     LANGUAGES C)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 add_library(xlisp "")
 add_subdirectory(src)
 
